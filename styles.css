@@ -1,0 +1,20 @@
+body {
+    padding-top: 56px; /* Altura da barra de navegação fixa */
+}
+
+/* Adicione aqui suas regras de estilo, como o grid e as media queries */
+
+/* Exemplo de banner com animação */
+#banner {
+    height: 200px;
+    background-color: #3498db;
+    animation: bannerAnimation 3s infinite;
+}
+
+@keyframes bannerAnimation {
+    0% { opacity: 0.5; transform: translateY(0); }
+    50% { opacity: 1; transform: translateY(-10px); }
+    100% { opacity: 0.5; transform: translateY(0); }
+}
+
+/* Adicione aqui as regras de estilo para outros elementos, cards, tabela, etc. */
