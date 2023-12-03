@@ -1,6 +1,7 @@
 body {
     padding-top: 70px; /* Ajuste para o posicionamento do menu fixo */
     scroll-behavior: smooth;
+    background-color: rgb(152, 152, 172);
   }
   
   .section {
@@ -30,7 +31,7 @@ body {
   
   /* Estilos para o Banner */
   .banner {
-    background-color: #f5f5f5;
+    background-color: #bbbafc;
     padding: 20px;
     animation: slide 5s infinite alternate; /* Anima��o em loop */
   }
