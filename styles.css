@@ -1,26 +1,49 @@
 body {
-    padding-top: 56px; /* Altura da barra de navegação fixa */
-}
-
-/* Adicione aqui suas regras de estilo, como o grid e as media queries */
-
-/* Exemplo de banner com animação */
-#banner {
-    height: 200px;
-    background-color: #3498db;
-    animation: bannerAnimation 3s infinite;
-}
-
-@keyframes bannerAnimation {
-    0% { opacity: 0.5; transform: translateY(0); }
-    50% { opacity: 1; transform: translateY(-10px); }
-    100% { opacity: 0.5; transform: translateY(0); }
-}
-
-/* Adicione aqui as regras de estilo para outros elementos, cards, tabela, etc. */
-#section1, #section2, #section3, #section4 {
+    padding-top: 70px; /* Ajuste para o posicionamento do menu fixo */
+    scroll-behavior: smooth;
+  }
+  
+  .section {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .back-to-top {
+    display: block;
+    margin-top: 20px;
+  }
+  
+  /* Ajuste para o menu ativo */
+  .navbar .nav-item.active .nav-link {
+    color: #007bff;
+  }
+  
+  /* Carrossel */
+  .carousel-item {
+    height: 400px;
+  }
+  
+  .carousel-item img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Estilos para o Banner */
+  .banner {
+    background-color: #f5f5f5;
     padding: 20px;
-}
+    animation: slide 5s infinite alternate; /* Anima��o em loop */
+  }
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(50px); /* Anima��o de deslocamento */
+    }
+  }
+
 
 /* Define a largura das colunas no grid para diferentes tamanhos de tela */
 @media (min-width: 576px) {
